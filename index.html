@@ -5,9 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <title>Clínica Estética</title>
+  <title>Mariana Muniz Estética</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
@@ -15,14 +15,17 @@
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 />
-
+<link rel="icon" type="image/png" href="images/favicon.jfif">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header class="hero" id="inicio">
     <nav id="navbar">
-      <h1>Glow Beauty</h1>
+      <div class="logo">
+  <img src="images/logo mari.jfif" alt="Mariana Muniz Estética">
+</div>
+      <h1>Mariana Muniz Estética</h1>
       <div class="menu-toggle">
   ☰
 </div>
@@ -38,13 +41,23 @@
     <div class="hero-container">
 
   <div class="hero-content" data-aos="fade-right">
-    <h2>Sua beleza em boas mãos</h2>
+    <h2>
+  Realce sua beleza com naturalidade,
+  sofisticação e autoestima
+</h2>
 
     <p>
-      Tratamentos estéticos modernos para elevar sua autoestima.
+      Especialistas em estética facial e corporal
+com atendimento personalizado em Pinheiros.
     </p>
 
-    <button>Agendar Avaliação</button>
+    <a
+  href="https://wa.me/5511991339627"
+  class="hero-button"
+  target="_blank"
+>
+  Agendar pelo WhatsApp
+</a>
   </div>
 
   <div class="hero-image" data-aos="fade-left">
@@ -98,17 +111,14 @@
 <section class="about" id="sobre" data-aos="fade-up">
 
   <div class="about-image">
-    <img
-      src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop"
-      alt="Equipe da clínica"
-    >
+    <img src="images/foto mari perfil 1.jpeg" alt="Mariana Muniz">
   </div>
 
   <div class="about-content">
     <h2>Sobre a Clínica</h2>
 
     <p>
-      Na Glow Beauty, cuidamos da sua autoestima com
+      No espaço Mariana Muniz, cuidamos da sua autoestima com
       tratamentos modernos, tecnologia avançada e
       profissionais especializados.
     </p>
@@ -119,6 +129,30 @@
     </p>
 
     <button>Conheça Mais</button>
+  </div>
+
+</section>
+<section class="gallery">
+
+  <h2>Nosso Espaço</h2>
+
+  <div class="gallery-container">
+
+    <img
+      src="https://images.unsplash.com/photo-1515377905703-c4788e51af15"
+      alt="Clínica estética"
+    >
+
+    <img
+      src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f"
+      alt="Procedimento"
+    >
+
+    <img
+      src="https://images.unsplash.com/photo-1519415943484-9fa1873496d4"
+      alt="Ambiente"
+    >
+
   </div>
 
 </section>
@@ -180,30 +214,31 @@
 
   <h2>Entre em Contato</h2>
 
-  <form class="contact-form">
+  <form id="formulario">
 
-    <input
-      type="text"
-      placeholder="Seu nome"
-      required
-    >
+  <input type="text" id="nome" placeholder="Seu nome" required>
 
-    <input
-      type="email"
-      placeholder="Seu e-mail"
-      required
-    >
+  <input type="tel" id="telefone" placeholder="Seu telefone" required>
 
-    <textarea
-      placeholder="Digite sua mensagem"
-      required
-    ></textarea>
+  <textarea id="mensagem" placeholder="Como podemos ajudar?"></textarea>
 
-    <button type="submit">
-      Enviar Mensagem
-    </button>
+  <button type="submit">
+    Agendar Atendimento
+  </button>
 
-  </form>
+</form>
+
+</section>
+<section class="map-section">
+
+<iframe
+src="https://www.google.com/maps?q=R.+Fradique+Coutinho,+776,+Pinheiros,+São+Paulo&output=embed"
+width="100%"
+height="350"
+style="border:0;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
 
 </section>
 <footer>
@@ -211,7 +246,7 @@
   <div class="footer-content">
 
     <div class="footer-brand">
-      <h2>Glow Beauty</h2>
+      <h2>Mariana Muniz Estética</h2>
 
       <p>
         Realçando sua beleza com tecnologia,
@@ -229,24 +264,38 @@
     <div class="footer-contact">
       <h3>Contato</h3>
 
-      <p><i class="fa-solid fa-location-dot"></i> São Paulo - SP</p>
-      <p><i class="fa-solid fa-phone"></i> (11) 99999-9999</p>
-      <p><i class="fa-solid fa-envelope"></i> contato@glowbeauty.com</p>
+      <p>
+  <i class="fa-solid fa-location-dot"></i>
+  R. Fradique Coutinho, 776 - Pinheiros, São Paulo - SP, 05416-001
+</p>
+      <p>
+  <i class="fa-solid fa-phone"></i>
+  (11) 99133-9627
+</p>
+      <p><i class="fa-solid fa-envelope"></i> marianamuniz58@gmail.com</p>
     </div>
 
   </div>
 
   <div class="footer-bottom">
-    <p>© 2026 Glow Beauty - Todos os direitos reservados.</p>
+    <p>© 2026 Mariana Muniz - Todos os direitos reservados.</p>
   </div>
 
 </footer>
 <a
-  href="https://wa.me/5511999999999"
+  href="https://wa.me/5511991339627"
   class="whatsapp-button"
   target="_blank"
 >
   <i class="fa-brands fa-whatsapp"></i> WhatsApp
+</a>
+<a
+  href="https://maps.app.goo.gl/SUXxYGDwMiTBpUUZ6"
+  target="_blank"
+  class="map-button"
+>
+  <i class="fa-solid fa-map-location-dot"></i>
+  Ver localização
 </a>
 
   <script src="script.js"></script>
@@ -255,6 +304,38 @@
 
 <script>
   AOS.init();
+</script>
+<script>
+
+document
+  .querySelector("#formulario")
+  .addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    const nome =
+      document.querySelector("#nome").value;
+
+    const telefone =
+      document.querySelector("#telefone").value;
+
+    const mensagem =
+      document.querySelector("#mensagem").value;
+
+    const texto =
+`Olá, me chamo ${nome}
+
+Telefone: ${telefone}
+
+Mensagem: ${mensagem}`;
+
+    const url =
+`https://wa.me/5511991339627?text=${encodeURIComponent(texto)}`;
+
+    window.open(url, "_blank");
+
+});
+
 </script>
 </body>
 </html>
