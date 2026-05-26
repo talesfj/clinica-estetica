@@ -10,11 +10,22 @@ body {
 }
 
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(to right, #f8d7da, #fff);
-  padding: 30px;
-  padding-top: 120px;
+  padding: 140px 60px 80px;
+  display: flex;
+  align-items: center;
+  .hero {
+
+  background:
+  linear-gradient(
+    rgba(0,0,0,0.45),
+    rgba(0,0,0,0.45)
+  );
+
 }
+}
+
 
 nav {
   display: flex;
@@ -22,9 +33,16 @@ nav {
   align-items: center;
 }
 
-nav h1 {
-  color: #c2185b;
+h1 {
+
+  font-family: 'Montserrat', sans-serif;
+
+  font-weight: 300;
+
+  letter-spacing: 3px;
+
 }
+
 
 nav ul {
   display: flex;
@@ -39,11 +57,12 @@ nav a {
 }
 
 .hero-container {
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  margin-top: 80px;
-  gap: 40px;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
 }
 
 .hero-content {
@@ -51,9 +70,10 @@ nav a {
 }
 
 .hero-content h2 {
-  font-size: 55px;
+  font-size: 64px;
+  line-height: 1.1;
+  margin-bottom: 25px;
   color: #222;
-  margin-bottom: 20px;
 }
 
 .hero-content p {
@@ -62,15 +82,20 @@ nav a {
   margin-bottom: 30px;
 }
 
-.hero-content button {
+.hero-button {
+  display: inline-block;
   padding: 15px 30px;
-  border: none;
-  background-color: #c2185b;
+  background-color: #25d366;
   color: white;
+  text-decoration: none;
   border-radius: 10px;
-  cursor: pointer;
   font-size: 16px;
   transition: 0.3s;
+}
+
+.hero-button:hover {
+  transform: translateY(-3px);
+  background-color: #1ebe5d;
 }
 
 .hero-content button:hover {
@@ -78,9 +103,10 @@ nav a {
   transform: translateY(-3px);
 }
 .hero-image img {
-  width: 500px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  width: 520px;
+  max-width: 100%;
+  border-radius: 24px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 nav a {
   position: relative;
@@ -212,6 +238,25 @@ nav a:hover::after {
 .nav-links.active {
   display: flex;
 }
+.hero-content h2 {
+  font-size: 42px;
+}
+.hero {
+  padding: 140px 25px 60px;
+  text-align: center;
+}
+
+.hero-container {
+  flex-direction: column;
+}
+
+.hero-image img {
+  width: 100%;
+}
+
+.hero-content h2 {
+  font-size: 42px;
+}
 
 }
 .about {
@@ -246,15 +291,8 @@ nav a:hover::after {
   line-height: 1.7;
 }
 
-.about-content button {
-  padding: 15px 30px;
-  border: none;
-  background-color: #c2185b;
-  color: white;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 0.3s;
-}
+
+
 
 .about-content button:hover {
   background-color: #a3154d;
@@ -465,4 +503,259 @@ html {
 .contact-form button:hover {
   background-color: #a3154d;
   transform: translateY(-3px);
+}
+.map-button {
+  display: inline-block;
+  margin-top: 15px;
+  color: white;
+  text-decoration: none;
+  background-color: #c2185b;
+  padding: 12px 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.map-button:hover {
+  background-color: #a3154d;
+  transform: translateY(-3px);
+}
+.hero-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 16px 32px;
+  background-color: #25d366;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #1ebe5d;
+  transform: translateY(-4px);
+}
+
+.hero-button i {
+  margin-right: 8px;
+}
+.hero-content {
+  max-width: 600px;
+}
+.gallery {
+  padding: 100px 30px;
+  background-color: white;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 40px;
+  margin-bottom: 60px;
+  color: #222;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.gallery-container img {
+  width: 350px;
+  max-width: 100%;
+  border-radius: 24px;
+  object-fit: cover;
+  transition: 0.4s;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.gallery-container img:hover {
+  transform: scale(1.04);
+}
+.logo img {
+  height: 70px;
+  width: auto;
+}
+.titulo-principal {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  letter-spacing: 4px;
+  font-weight: 300;
+  color: white;
+}
+.sobre img {
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+.hero-button {
+
+  display: inline-block;
+
+  margin-top: 20px;
+
+  background: #b388eb;
+
+  color: white;
+
+  padding: 14px 28px;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+
+}
+
+.hero-button:hover {
+
+  transform: scale(1.05);
+
+  background: #9d6fe0;
+
+}
+.logo img {
+
+  height: 70px;
+
+  width: auto;
+
+}
+.whatsapp-button {
+
+  position: fixed;
+
+  bottom: 20px;
+
+  right: 20px;
+
+  background: #25d366;
+
+  color: white;
+
+  padding: 15px 20px;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+
+  z-index: 999;
+
+  transition: 0.3s;
+
+}
+
+.whatsapp-button:hover {
+
+  transform: scale(1.08);
+
+}
+.map-section {
+
+  margin-top: 60px;
+
+}
+
+.map-section iframe {
+
+  border-radius: 20px;
+
+}
+.contact {
+
+  padding: 100px 20px;
+
+  background: #f8f1f5;
+
+  text-align: center;
+
+}
+
+.contact h2 {
+
+  font-size: 3rem;
+
+  margin-bottom: 50px;
+
+  color: #222;
+
+}
+
+#formulario {
+
+  max-width: 700px;
+
+  margin: auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+
+}
+
+#formulario input,
+#formulario textarea {
+
+  width: 100%;
+
+  padding: 18px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  font-size: 1rem;
+
+  font-family: 'Poppins', sans-serif;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+
+}
+
+#formulario textarea {
+
+  height: 140px;
+
+  resize: none;
+
+}
+
+#formulario button {
+
+  background: #b388eb;
+
+  color: white;
+
+  border: none;
+
+  padding: 18px;
+
+  border-radius: 50px;
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+}
+
+#formulario button:hover {
+
+  background: #9d6fe0;
+
+  transform: scale(1.03);
+
 }
